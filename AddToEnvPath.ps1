@@ -1,6 +1,6 @@
 <#
 .Synopsis
-   Adds given Path to the $Env:Path
+   Adds persistant Path to the $Env:Path
 .DESCRIPTION
 
 .EXAMPLE
