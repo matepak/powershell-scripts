@@ -22,7 +22,7 @@ function Add-EnvPath {
         if ( -not $IsInEnvPath ) {
             try {
                 [Environment]::SetEnvironmentVariable(
-                    "PATH", $Env:PATH + $Path, [EnvironmentVariableTarget]::Machine)
+                    "PATH", $Env:PATH  + $Path + ';', [EnvironmentVariableTarget]::Machine)
                 Write-Host "Path $Path added to `$Env:Path"
             }
             catch [System.Security.SecurityException] {
